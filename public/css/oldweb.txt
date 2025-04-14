@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WNFC Esport Dojo</title>
+    <link rel="icon" type="image/png" href="{{ asset('WNFCMini.png') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/newstyle.css') }}">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        header {
+            position: relative;
+        }
+
+        nav {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin-bottom: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:link {
+            color: white;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: white;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color:white;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        .sponsor-spot {
+            background-color: #ADD8E6;
+            /* implement background image */
+            /* implement background image size */
+            background-position: center;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .sponsor-spot .spon-text {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .sponsor-spot .spon-logo {
+            max-width: 200px;
+            height: auto;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        #contact {
+            text-align: center;
+            padding: 20px;
+            background-color:rgb(15, 167, 228);
+            position: relative;
+            width: 100%;
+            margin-top: 50px;
+        }
+
+        #contact ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 7px;
+        }
+
+        #contact ul li {
+            display: block;
+            margin: 5px 0;
+        }
+
+        #contact ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.2rem;
+        }
+
+            /* video integration for later use */
+        
+        .video-container {
+            width: 100%;
+            height: 400px; /* measurements will likely need adjustment later */
+            position: relative;
+            top: 0;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h1 style="margin-left: 330px; margin-top: 100px; color:white">Community.</h1>
+            <h1 style="margin-left: 350px; margin-top: 25px; color:white">Comaraderie.</h1>
+            <h1 style="margin-left: 350px; margin-top: 25px; color:white">Competition.</h1>
+            <h1 style="margin-left: 450px; margin-top: 25px; color:white">Everyone Belongs.</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#price">Pricing</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <section>
+            <h2 style="text-align: center; color:grey">Dojo parents have a lot to say about us</h2>
+        </section>
+
+    <!-- about section -->
+        <section id="about" style="margin-top: 500px;">
+            <h3 style="text-align: center; color:grey">No matter who you are or how you identify</h3>
+            <h2 style="text-align: center; color:black">There's a place here for you.</h2>
+            <p>placeholder text for about section</p>
+        </section>
+         
+    <!-- champlain sponsor spot-->
+        <section class="sponsor-spot">
+            <div class="spon-text">
+                <p>Graciously Sponsored By</p>
+            </div>
+            <img src="images/CCE-Logo.png" alt="CCE Logo" class="spon-logo">
+        </section>
+    
+    <!-- Pricing section-->
+
+        <section id="price">
+            <h2 style="text-align: left; color:grey">Ready to begin?</h2>
+            <h1 style="text-align: left; color:dark grey">THE JOURNEY STARTS HERE.</h1>
+        </section>
+
+    <!-- contact section bottom of page-->
+        
+        <section class="contact-spot" id="contact">
+            <h1 style="text-align: center; color:white"><i>Don't hesitate!</i> Call or email us today about getting started!</h1>          
+            <ul>
+                <li>Email: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dojo@wnfcesd.com" target="_blank">dojo@wnfcesd.com</a></li>
+                <li>Phone: (802) 310-3550</li>
+                <li>Location: <a href="https://shorturl.at/NFF2J" target="_blank">46 Pearl St, Essex Jct, VT</a></li>
+            </ul>        
+        </section>
+    </main>
+</body>
+</html>
